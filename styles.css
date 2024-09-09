@@ -128,6 +128,7 @@ body {
 .section-title {
     font-size: 50px;
     text-align: center;
+    margin: 50px;
 }
 
 .services {
@@ -295,6 +296,7 @@ body {
 .blog-image {
     display: flex;
     justify-content: center;
+    margin: 10px;
 }
 
 .pics-5 {
@@ -454,4 +456,138 @@ body {
     width: 100px;
     padding: 15px 0px;
     align-self: flex-end;
+}
+
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-hello {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero-name {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .hero-desc, .hero-more {
+        font-size: 20px;
+    }
+
+    .social {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        max-width: 100%;
+        padding: 40px 10px;
+    }
+
+    .portfolio-nav {
+        flex-direction: column;
+    }
+
+    .testimony-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .resume-box, .blogger, .blog-1 {
+        margin: 20px;
+    }
+
+    .blog-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .blog-card img {
+        height: 150px;
+    }
+
+    .hire-form {
+        padding: 40px 20px;
+    }
+
+    .hire-details {
+        gap: 40px;
+    }
+
+    .hire-form input, .hire-form textarea {
+        padding: 8px 5px;
+    }
+
+    .hire-form button {
+        width: auto;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .hero-hello {
+        font-size: 28px;
+    }
+
+    .hero-name {
+        font-size: 30px;
+    }
+
+    .hero-desc, .hero-more {
+        font-size: 18px;
+    }
+
+    .service-card {
+        padding: 30px 10px;
+    }
+
+    .testimonial-content q {
+        font-size: 30px;
+    }
+
+    .client-name {
+        font-size: 22px;
+    }
+
+    .client-title {
+        font-size: 18px;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+
+    .blog-card img {
+        height: 120px;
+    }
+
+    .contact-section::before {
+        font-size: 200px;
+    }
+
+    .contact-btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 }
