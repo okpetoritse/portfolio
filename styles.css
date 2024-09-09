@@ -1,0 +1,457 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    line-height: normal;
+    color: #333333;
+}
+
+body {
+    background-color: #fafafa;
+  
+
+    line-height: 1em;
+    margin: 0
+}
+
+.image {
+    float: right;
+}
+
+.box-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.box-4 {
+    text-align: center;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    gap: 20px;
+}
+
+.hero-image {
+    width: 450px;
+    height: 600px;
+}
+
+.hero-hello {
+    font-family: 'Ubuntu';
+    font-weight: 600;
+    font-size: 34px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.hero-hello::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -50px;
+    top: 7px;
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+}
+
+.hero-name {
+    font-family: 'Rubik';
+    font-size: 70px;
+    line-height: 74px;
+    font-weight: bold;
+}
+
+.hero-name span {
+    font-weight: 400;
+}
+
+.hero-desc {
+    font-size: 30px;
+    line-height: normal;
+}
+
+.hero-more {
+    font-size: 24px;
+    line-height: normal;
+}
+
+
+.social {
+    display: flex;
+    gap: 50px;
+    margin: 90px 0 100px;
+}
+
+.social a {
+    cursor: pointer;
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 120px;
+}
+
+
+.section-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #D6D6D6;
+    padding: 70px 20px 50px;
+    gap: 30px;
+    max-width: 350px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 46px;
+    font-weight: normal;
+    line-height: normal;
+    color: inherit;
+}
+
+.service-card p {
+    font-size: 18px;
+    line-height: normal;
+    color: inherit;
+}
+
+
+.service-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card.active {
+    background-color: #333333;
+    color: #fff;
+}
+
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.portfolio-section h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-nav span {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.portfolio-nav span:first-child {
+    font-weight: bold;
+}
+
+.portfolio-nav span:hover {
+    color: #000;
+}
+
+.portfolio-nav span::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+
+.testimony-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 150px;
+}
+
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.testimonial-image img {
+    max-width: 350px;
+    height: auto;
+}
+
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+.testimonial-content q {
+    font-size: 40px;
+    line-height: normal;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.client-name {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.client-title {
+    font-size: 20px;
+}
+
+
+.resume-box {
+    margin: 100px;
+}
+
+.resume-box {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.blogger {
+    margin: 110px;
+}
+
+.blog-1 {
+    font-family: Verdana, sans-serif;
+    sans-serif;
+    margin: 110px;
+    text-align: center;
+}
+
+.blog-image {
+    display: flex;
+    justify-content: center;
+}
+
+.pics-5 {
+    display: flex;
+    justify-content: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.blog-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 150px;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background-color: black;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card .date {
+    margin: 10px;
+    font-size: 14px;
+    color: gray;
+}
+
+.blog-content {
+    padding: 15px;
+}
+
+.blog-content h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.blog-content .comments-likes {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.blog-content a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+
+
+
+/* just hello */
+
+.contact-section {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.contact-section::before {
+    content: "Hello";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 300px;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+}
+
+.contact-btn {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    z-index: 2;
+    position: relative;
+}
+
+.contact-btn:hover {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #333;
+}
+
+
+.hire-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.hire-content {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.hire-details {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 150px;
+}
+
+.hire-details > p {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.hire-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 80px 60px;
+    background: #333333;
+    min-width: 500px;
+}
+
+.hire-form input, .hire-form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding: 10px 5px;
+    color: #fff;
+}
+
+.hire-form button {
+    width: 100px;
+    padding: 15px 0px;
+    align-self: flex-end;
+}
